@@ -9,7 +9,7 @@ Created on Thu Mar 19 00:24:04 2020
 from PIL import Image, ImageDraw
 import os
 
-foldername=r"C:\Users\Egecan Cogulu\Desktop\Python Image Outputs\E3\\"
+foldername=r"C:\Users\Egecan\Desktop\GIF\\"
 filenames=os.listdir(foldername)
 images=[]
 
@@ -42,4 +42,4 @@ for (i,filename) in enumerate(filenames):
 #     images.append(im)
 
 images[0].save(foldername+str(i)+" IMAGES GIF.gif",
-                save_all=True, append_images=images[1:], optimize=False, duration=250, loop=0)
+                save_all=True, append_images=images[1:], optimize=True, duration=0, loop=0)
